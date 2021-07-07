@@ -4541,8 +4541,10 @@ packages:
     "NoRedInk <haskell-open-source@noredink.com>":
         - nri-env-parser
         - nri-http
+        - nri-kafka
         - nri-observability
         - nri-prelude
+        - nri-postgresql
         - nri-redis
         - nri-test-encoding
 
@@ -7297,6 +7299,8 @@ expected-test-failures:
     - mysql-haskell # Requires local mysql server with a test account, and binlog enabled.
     - mysql-simple # MySQL
     - network-anonymous-i2p
+    - nri-kafka # Requires local kafka server
+    - nri-postgresql # Requires local postgresql server
     - odbc # "Need ODBC_TEST_CONNECTION_STRING environment variable"
     - opaleye # PostgreSQL
     - pandoc-plot # requires matlab, etc and DISPLAY for tcltk
